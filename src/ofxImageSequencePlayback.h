@@ -54,6 +54,8 @@ class ofxImageSequencePlayback {
   public:
     void update();
     void draw();
+    void draw(int x, int y);
+    void draw(int x, int y, int w, int h);
     
 	ofxImageSequencePlayback();
 	~ofxImageSequencePlayback();

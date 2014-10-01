@@ -203,3 +203,11 @@ void ofxImageSequencePlayback::dispatchCompleteNotification() {
 void ofxImageSequencePlayback::draw() {
     mSequence.getFrame(getCurrentFrameIndex())->draw(0,0);
 }
+
+void ofxImageSequencePlayback::draw(int x, int y) {
+    mSequence.getFrame(getCurrentFrameIndex())->draw(x,y);
+}
+
+void ofxImageSequencePlayback::draw(int x, int y, int w, int h) {
+    mSequence.getFrame(getCurrentFrameIndex())->draw(x, y, w, h);
+}
